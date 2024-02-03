@@ -1,0 +1,59 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        align-items: flex-start;
+    }
+
+    .innercontainer {
+        margin-top: 10px;
+    }
+
+    .facebookname {
+        width: 100%;
+    }
+
+    .shortinfo h4 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .name {
+        width: 100%;
+        margin: 0;
+    }
+
+    .innercontainer2 {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .loginformcontainer {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .innercontainer2 {
+        width: 40%;
+    }
+
+    .facebookname {
+        width: 60%;
+    }
+
+    .shortinfo h4 {
+        margin-left: 105px;
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+    .innercontainer2 {
+        width: 26%;
+    }
+
+    .facebookname {
+        width: 40%;
+    }
+}

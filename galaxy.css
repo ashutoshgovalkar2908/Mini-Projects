@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../Img/galaxy.jpg);
+    background-size: cover;
+
+}
+.solar-system{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plannet-border-animation-position{
+    border: 0.1px solid #ffffff ;
+    border-radius: 50%;
+    animation: circle linear infinite;
+    position: relative;
+}
+.plannet-border-radius{
+    border-radius: 50%;
+}
+.plannet-position{
+    position: relative;
+}
+.animation{
+    animation: circle linear infinite;
+}
+.border{
+    border: 0.1px solid #ffffff ;
+    border-radius: 50%;
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    border: 0.5px dashed #ffffff ;
+    background-color: orange;
+    left: -330px;
+}
+.sun-video{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: center;
+    /* position: absolute; */
+}
+.mercury{
+    width: 180px;
+    height: 180px;
+    padding: 40px;
+    left: 450px;
+    animation-duration:25s; 
+    /* animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    */
+}
+.mercury-plannet{
+    width: 50px;
+    height: 50px;
+    left: -55px;
+    background-color: #b3b3b3; 
+}
+.venus{
+    width: 270px;
+    height: 270px;
+    left: 225px;
+    animation-duration: 27s;
+    gap: 20px;
+    
+}
+.venus-plannet{
+    width: 60px;
+    height: 60px;
+    background-color: #ff5c33;
+    border-radius: 50%;
+    left: 12px;
+    padding-inline: 20px;
+}
+.earth{
+    width: 370px;
+    height: 370px;
+    left: -95px;
+    animation-duration: 20s;
+}
+.earth-plannet{
+    width: 70px;
+    height: 70px;
+    background-color:#3399ff;
+    border-radius: 50%;
+    left: 30px;
+    padding-inline: 20px;
+}
+@keyframes circle {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

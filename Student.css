@@ -1,0 +1,64 @@
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    margin: 5px;
+    border: 2px solid red;
+    height: 800px;
+    width: 700px;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 119, 255);
+}
+#first{
+    margin: 0px 0px 10px 50px;
+}
+#father{
+    margin: 0px 0px 10px 38px;
+}
+#last{
+    margin: 0px 0px 10px 52px;
+}
+.names{
+    width: 162px;
+}
+.detail{
+    margin:0px 2px 0px 50px;
+    font-size: 17px;
+}
+
+#spn{
+    margin: 3px;
+}
+
+.DOB{
+    margin:2px 0px 0px 33px;
+}
+.Emails{
+    font-size: 17px;
+   margin: 0px 0px 0px 7px;
+}
+#Email{
+    margin: 10px 0px 0px 64px;
+    width: 280px;
+}
+.mobile{
+    font-size: 17px;
+    margin: 0px 0px 0px 7px;
+}
+.mobiles{
+    margin: 10px 0px 10px 49px;
+}
+#txt{
+    margin: -21px 188px;
+    width: 330px;
+    height: 50px;
+}
+.gndr{
+     margin: -19px 0px 0px 182px;
+}

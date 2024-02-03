@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="Calculater_Css.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc">
+            <!-- <input type=" text" class="calc1"> -->
+            <input type="text" class="calc1" id="output">
+            <div class="button">
+                <button class="b1" type="button" value="">mc</button>
+                <button class="b1" value="">mr</button>
+                <button class="b1" value="">m+</button>
+                <button class="b1" value="">m-</button>
+            </div>
+            <div class="button">
+                <button class="b2" value="">AC</button>
+                <button class="b2" value="">&radic;x</button>
+                <button class="b2" value="%">%</button>
+                <button class="b2 cl" value="÷" id="div">÷</button>
+            </div>
+            <div class="button">
+                <button class="b2 cl2" value="7" onclick="getValue(this)" id="value7">7</button>
+                <button class="b2 cl2" value="8" onclick="getValue()" id="value8">8</button>
+                <button class="b2 cl2" value="9" onclick="getValue()" id="value9">9</button>
+                <button class="b2 cl" value="*" id="mult">*</button>
+            </div>
+            <div class="button">
+                <button class="b2 cl2" value="4" onclick="getValue()" id="value4">4</button>
+                <button class="b2 cl2" value="5" onclick="sgetValue()" id="value5">5</button>
+                <button class="b2 cl2" value="6" onclick="getValue()" id="value6">6</button>
+                <button class="b2 cl" value="-" id="diff">-</button>
+            </div>
+            <div class="button">
+                <button class="b2 cl2" value="1" id="value1"  onclick="getValue()">1</button>
+                <button class="b2 cl2" value="2" id="value2"  onclick="getValue()">2</button>
+                <button class="b2 cl2" value="3" onclick="getValue()" id="value3">3</button>
+                <button class="b2 cl" value="+" id="plus">+</button>
+            </div>
+            <div class="button">
+                <button class="b2 cl2" value="0" onclick="getValue()" id="value0">0</button>
+                <button class="b2 cl2" value=".">.</button>
+                <button class="b2 cl2" value="">+/-</button>
+                <button class="b2 cl" value="=" onclick="sum()">=</button>
+            </div>
+            <div class="button">
+                <button class="b2" value="3.14">&pi;</button>
+                <button class="b2" value="">X<sup>y</sup></button>
+                <button class="b2" value="">R2</button>
+                <button class="b2" value="">R0</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calulater.js"></script>
+</body>
+</html>

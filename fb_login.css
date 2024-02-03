@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+body{
+    background-color: #f0f2f5;
+  
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+}
+.innercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    height: 100vh;
+    width: 100vw;
+    margin-top:20px;
+}
+.facebookname{
+    height: 300px;
+    width: 40vw;
+    margin: 121px 6px 0px -116px;
+    box-sizing: border-box;
+   
+}
+.shortinfo{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 100%;
+    margin-top: 20px;
+}
+.shortinfo h4{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-left: 105px;
+    color: #1c1e21;
+}
+.name{
+    height: 80px;
+    width: 350px;
+    margin: 7px 0px 0px 60px;
+    text-align: center;
+}
+.fbimg{
+    margin: 0px 0px -4px 0px;
+    width: 90%;
+    height: 106px;
+    text-align: center;
+    font-weight: 400;
+}
+.innercontainer2{
+    
+    /* margin: 50px 0px 0px 18px; */
+    padding: 0 0 14px 0;
+    width: 26vw;
+    height: 422px;
+    margin: 80px 0px 0px 80px;
+    
+}
+.loginname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* border: 2px solid red; */
+    margin:5px 0px 0px 0px;
+}
+.loginname2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: px;
+    color: #1c1e21;
+}
+.loginformcontainer{
+
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    margin-top: 40px;
+}
+.emailorphonepassword{
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #a4a2af;
+    padding:0px 0px 0px 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    outline-style: none;
+    border: 1px solid #dddfe2;
+}
+.user,.pass,.button{
+    width: 100%;
+    height: 60px;
+    /* border: 2px solid black; */
+    
+}
+.user{
+    margin: 0px 15px 0px 0px;
+}
+.pass{
+    margin: 5px 15px 8px 0px;
+}
+.button{
+    /* border: none; */
+    margin: 0px 15px 5px 0px;
+}
+.forgot{
+    width: 364px;
+    margin: 8PX auto; 
+    text-align: center;
+}
+.button1{
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 2vw;
+  width:100%;
+  font-weight: bold;
+  color: #FFFFFF;
+ 
+  cursor: pointer;
+}
+.forgot1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+.line{
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+}
+.newaccount{
+    text-align: center;
+    display: block;
+    margin-top: 28px;
+   
+}
+.newaccount a{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;  
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  color: #fff;
+  height: 30px;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+.creatpage{
+    margin-top: 28px;
+    text-align: center;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+}
+.creatpage a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #1c1e21;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
