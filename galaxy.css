@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../Img/galaxy.jpg);
+    background-image: url(./Images/galaxy.jpg);
     background-size: cover;
 
 }
