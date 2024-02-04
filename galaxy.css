@@ -40,7 +40,7 @@ body{
     height: 100px;
     border: 0.5px dashed #ffffff ;
     background-color: orange;
-    left: -618px;
+    left: -650px;
 }
 .sun-video{
     width: 150px;
@@ -54,7 +54,7 @@ body{
     height: 180px;
     padding: 40px;
     left: 655px;
-    animation-duration:25s; 
+    animation-duration:20s; 
     /* animation-name: circle;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -106,11 +106,17 @@ body{
     background-color:#be5151;
     left: 75px;
 }
-@keyframes circle {
+.jupiter{
+    width: 550px;
+    height: 550px;
+    left: -330px;
+    animation-duration: 13s;
+}
+/* @keyframes circle {
     0%{
         transform: rotate(0);
     }
     100%{
         transform: rotate(360deg);
     }
-}
+} */
