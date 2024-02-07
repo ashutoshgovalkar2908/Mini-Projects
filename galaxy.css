@@ -10,8 +10,10 @@ body{
 }
 .solar-system{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
+    margin-top: 100px;
+    padding-inline: 20px;
     justify-content: center;
     align-items: center;
     /* flex-direction: column; */
@@ -26,7 +28,7 @@ body{
     border-radius: 50%;
 }
 .plannet-position{
-    position: relative;
+    position: absolute;
 }
 .animation{
     animation: circle linear infinite;
@@ -40,7 +42,7 @@ body{
     height: 100px;
     border: 0.5px dashed #ffffff ;
     background-color: orange;
-    left: -615px;
+    right: 672px;
 }
 .sun-video{
     width: 150px;
@@ -53,7 +55,7 @@ body{
     width: 150px;
     height: 150px;
     padding: 40px;
-    left: 640px;
+    left: 538px;
     animation-duration: 4s; 
     animation-name: circle;
     animation-iteration-count: infinite;
@@ -68,56 +70,105 @@ body{
     background-color: #b3b3b3;
 }
 .venus{
-    width: 270px;
-    height: 270px;
-    left: 428px;
+    width: 225px;
+    height: 225px;
+    left: 350px;
     animation-duration: 27s;
-    gap: 20px;
+    /* gap: 20px; */
     
 }
 .venus-plannet{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: #ff5c33;
-    left: 12px;
-    padding-inline: 20px;
+    left: 28px;
+    /* padding-inline: 20px; */
 }
 .earth{
-    width: 380px;
-    height: 380px;
-    left: 102px;
+    width: 330px;
+    height: 330px;
+    left: 72px;
     animation-duration: 20s;
 }
 .earth-plannet{
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     background-color:#3399ff;
-    left: 34px;
+    left: -10px;
     padding-inline: 20px;
 }
+.moon{
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    left: -17.2px;
+    top: 62px;
+}
 .mars{
-    width: 480px;
-    height: 480px;
-    left: -330px;
-    animation-duration: 13s;
+    width: 450px;
+    height: 450px;
+    left: -318px;
+    animation-duration: 6s;
 }
 .mars-plannet{
-    width: 65px;
-    height: 65px;
+    width: 40px;
+    height: 40px;
     background-color:#be5151;
-    left: 75px;
+    left: 95px;
 }
 .jupiter{
-    width: 550px;
-    height: 550px;
+    width: 600px;
+    height: 600px;
     left: -330px;
     animation-duration: 13s;
 }
-/* @keyframes circle {
+.jupiter-plannet{
+    width: 80px;
+    height: 80px;
+    background-color:#ff5252;
+    left: 108px;
+}
+.saturn{
+    width: 765px;
+    height: 765px;
+    left: 330px;
+    animation-duration: 16s;
+}
+.saturn-plannet{
+    width: 75px;
+    height: 75px;
+    background-color:#d17272;
+    left: 182px;
+}
+.uranus{
+    width: 900px;
+    height: 900px;
+    left: -260px;
+    animation-duration: 23s;
+}
+.uranus-plannet{
+    width: 65px;
+    height: 65px;
+    background-color:#d17272;
+    left: 242px;
+}
+.neptune{
+    width: 1040px;
+    height: 1040px;
+    left: -194px;
+    animation-duration: 6s;
+}
+.neptune-plannet{
+    width: 60px;
+    height: 60px;
+    background-color:#d17272;
+    left: 295px;
+}
+
+@keyframes circle {
     0%{
         transform: rotate(0);
     }
     100%{
         transform: rotate(360deg);
     }
-} */
