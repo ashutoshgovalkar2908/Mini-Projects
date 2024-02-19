@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body{
     background-image: url(./Images/body_background.png);
@@ -13,6 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 }
 .plannet-border-animation-position{
