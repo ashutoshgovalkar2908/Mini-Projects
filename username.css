@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -78,6 +79,7 @@ form input {
     border-radius: 20px;
     outline: none;
 }
+
 label {
     font-weight: 600;
 }
@@ -96,7 +98,25 @@ label {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-button:hover{
+
+button:hover {
     /* background-color: red; */
     transform: scale(1.1);
+}
+
+.output-box {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    padding: 15px;
+    display: none;
+}
+
+.output {
+    width: 100%;
+    background-color:#c3c6c8;
+    border: 2px solid #ccc;
+    border-radius: 18px;
+    padding: 10px;
 }
