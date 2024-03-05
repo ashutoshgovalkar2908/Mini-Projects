@@ -92,6 +92,7 @@ label {
     border-radius: 20px;
     font-weight: 700;
     background-color: #3498db;
+    color: #fff;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
