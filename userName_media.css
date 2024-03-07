@@ -1,0 +1,68 @@
+/* Large devices (desktops and laptops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        padding-inline: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        padding-inline: 30px;
+    }
+    .creator-box {
+        width: 70%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        padding-inline: 20px;
+    }
+    .creator-box {
+        width: 80%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .container {
+        padding-inline: 10px;
+    }
+    .creator-box {
+        width: 90%;
+    }
+    .creator-box h1{
+        font-size: 1.4rem;
+    }
+    .creator-box h3{
+        font-size: 1rem;    
+    }
+    .form-box {
+        margin-top: 20px;
+    }
+    form input{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    label{
+        font-size: 0.88rem;
+    }
+    .btn button {
+        padding: 15px;
+        font-size: 0.7rem;
+    }
+    .output-box {
+        width: 90%;
+    }
+    .output-box h2 {
+        font-size: 1.2rem;
+    }
+    .output {
+        font-size: 0.8rem;
+    }
+    .close img {
+        width: 20px;
+    }
+}
