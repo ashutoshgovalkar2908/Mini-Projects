@@ -1,21 +1,15 @@
-    
+
     // EvenListener for creat username
     document.querySelector('#btn').addEventListener('click', function () {
 
     // accessing inputs field
     let firstName = document.querySelector("#firstname");
     let lastName = document.querySelector("#lastname");
-      
-    let creatorbox = document.querySelector(".creator-box");
-    let outputbox = document.querySelector(".output-box");
-
-    creatorbox.style.display = "none";
-    outputbox.style.display = "block";
 
     firstName = firstName.value;
     lastName = lastName.value;
-
-    // loops for checking space between character
+    console.log(firstName, lastName);
+    // loops for checking space between characters
     for (let i = 0; i < firstName.length; i++) {
         if (firstName[i] === " ") {
             firstName = alert("Your firstName has some spaces Please try again...!!!");
@@ -58,10 +52,16 @@
     output3.innerText = username3;
     output4.innerText = username4;
     output5.innerText = username5;
+
+    let creatorbox = document.querySelector(".creator-box");
+    let outputbox = document.querySelector(".output-box");
+
+    creatorbox.style.display = "none";
+    outputbox.style.display = "block";
 })
 
-// EventListener on output box to close.
-document.querySelector('.close').addEventListener('click', function () {
+    // EventListener on output box to close.
+    document.querySelector('.close').addEventListener('click', function () {
 
     document.querySelector('.output-box').style.display = 'none';
     document.querySelector('.creator-box').style.display = 'block';
