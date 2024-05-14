@@ -2,48 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body,html{
     width: 100%;
     height: 100%;
-    position: relative;
 }
 body{
-    background-color: #f0f2f5;
+    background-color: #c9ccd1;
   
 }
+.flex{
+    display: flex;
+}
+.wrapper{
+    width: 94.88rem;
+    /* height: 100vh; */
+}
+.main-section{
+    width: 100%;
+    padding-bottom: 10.2rem;
+    background-color: #f0f2f5;
+}
 .container{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 75%;
+    margin:auto;
+    padding: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f2f5;
+    gap: 20px;
 }
-.innercontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content:flex-start;
-    height: 100vh;
-    width: 100vw;
-    margin-top:20px;
+.fb-nameInfo{
+    width: 56%;
+    padding: 9.88rem 20px 20px;
 }
-.facebookname{
-    height: 300px;
-    width: 40vw;
-    margin: 121px 6px 0px -116px;
-    box-sizing: border-box;
+.fb-nameInfo-wrapper{
+   flex-direction: column;
+   height: 100%;
+}
+.fb-name{
+   width: auto;
    
 }
-.shortinfo{
-    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+.fb-name img{
+    width: 320.938px;
+}
+.fb-short-info{
+    padding-left: 32px;
     font-size: 28px;
-    font-weight: normal;
-    line-height: 32px;
-    width: 100%;
-    margin-top: 20px;
+    font-weight: 300;
 }
 .shortinfo h4{
     font-size: 28px;
@@ -65,88 +72,56 @@ body{
     text-align: center;
     font-weight: 400;
 }
-.innercontainer2{
-    
-    /* margin: 50px 0px 0px 18px; */
-    padding: 0 0 14px 0;
-    width: 26vw;
-    height: 422px;
-    margin: 80px 0px 0px 80px;
-    
+.login-outer{
+    width: calc(100% - 56%);
+    padding: 6.55rem 70px 0px 10px;
 }
-.loginname{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    /* border: 2px solid red; */
-    margin:5px 0px 0px 0px;
-}
-.loginname2{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: px;
-    color: #1c1e21;
-}
-.loginformcontainer{
-
+.login{
     width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid black; */
+}
+.login-inner{
+    width: 100%;
     background-color: #fff;
-    border: 1px solid #dddfe2;
-    border-radius: 8px;
+    padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-    margin-top: 40px;
+    border-radius: 6px;
 }
-.emailorphonepassword{
-    height: 50px;
+.form{
     width: 100%;
+}
+form input{
+    width: 100%;
+    padding: 14px 16px;
     border-radius: 6px;
     font-size: 17px;
-    color: #a4a2af;
-    padding:0px 0px 0px 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFFFFF;
-    outline-style: none;
-    border: 1px solid #dddfe2;
+    border: 1px solid #ccc;
 }
-.user,.pass,.button{
+.login-button{
+    margin-block: 5px;
+}
+form button{
     width: 100%;
-    height: 60px;
-    /* border: 2px solid black; */
-    
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #0866ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
 }
-.user{
-    margin: 0px 15px 0px 0px;
-}
-.pass{
-    margin: 5px 15px 8px 0px;
-}
-.button{
-    /* border: none; */
-    margin: 0px 15px 5px 0px;
+form div{
+    padding-block: 6px;
 }
 .forgot{
-    width: 364px;
-    margin: 8PX auto; 
+    width: 100%;
+    margin-top: 8px; 
+    font-size: 14px;
     text-align: center;
 }
-.button1{
-  background-color: #1877f2;
-  border: none;
-  border-radius: 6px;
-  font-size: 20px;
-  line-height: 48px;
-  padding: 0 2vw;
-  width:100%;
-  font-weight: bold;
-  color: #FFFFFF;
- 
-  cursor: pointer;
+.forgot a{
+    text-decoration: none;
+    color: #0866ff;
 }
 .forgot1{
     font-family: Arial, Helvetica, sans-serif;
@@ -158,41 +133,88 @@ body{
    
 }
 .line{
-  align-items: center;
-  border-bottom: 1px solid #dadde1;
-  display: flex;
-  margin: 20px 16px;
-  text-align: center;
-}
-.newaccount{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    margin:0px 16px 14px;
     text-align: center;
-    display: block;
-    margin-top: 28px;
-   
 }
-.newaccount a{
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold;  
-  background-color: #42b72a;
-  border: none;
-  border-radius: 6px;
-  font-size: 17px;
-  line-height: 48px;
-  color: #fff;
-  height: 30px;
-  padding: 14px 20px;
-  cursor: pointer;
+.new-account div{
+   width: 54%;
+   margin: auto;
 }
-.creatpage{
+.new-account button{
+    background-color: #42b72a;
+    font-size: 17px;
+    padding: 14px 10px;
+}
+.new-account button:hover{
+    background-color: #36a420;;
+}
+.creat-page{
     margin-top: 28px;
     text-align: center;
-    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
-.creatpage a{
+.creat-page a{
     text-decoration: none;
     cursor: pointer;
     color: #1c1e21;
-    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
-    font-size: 14px;
     font-weight: 600;
+}
+.creat-page a:hover{
+    text-decoration: underline;
+}
+.footer{
+    width: 100%;
+    padding: 25px;
+    background-color: #ffffff;
+}
+.footer-outer{
+    width: 70%;
+    margin: auto;
+    /* padding: 40px; */
+}
+.footer-outer ul li{
+    list-style: none;
+}
+.footer-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+.footer-list li a{
+    color: rgb(87, 82, 82);
+    text-decoration: none;
+}
+.hr-line{
+    border-bottom: 1px solid #909397;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+}
+.footer-menu{
+    width: 100%;
+}
+.footer-menu-ul{
+    flex-wrap: wrap;
+    gap: 5px 21px;
+    overflow-x: hidden;
+    color: rgb(87, 82, 82);
+    font-size: 13px;
+}
+.footer-menu-ul li a{
+    color: rgb(87, 82, 82);
+    font-size: 13px;
+    text-decoration:none ;
+}
+.copyright{
+    margin-block: 20px;
+    font-size: 11px;
+    color: rgb(87, 82, 82);
+}
+.footer-list li a,.footer-menu-ul li a:hover{
+    text-decoration: underline;
 }
