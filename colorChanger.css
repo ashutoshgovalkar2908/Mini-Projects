@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     height: 100vh;
     background-color: #212121;
@@ -22,6 +23,8 @@ body{
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
+    position: absolute;
+    top: 40px;
 }
 .color-box{
     display: flex;
@@ -46,8 +49,7 @@ body{
     border: none;
     outline: none;
     border-radius: 8px;
-    background-color: #fff;
-    color: #212121;
+    color: #fff;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -58,5 +60,10 @@ body{
 #changeColorBtn:hover{
     background-color: #c4f584;
     transform: scale(1.05);
-    
+}
+
+.copybtn{
+    width: 50px;
+    padding: 10px 40px;
+    background-color: #c4f584;
 }
