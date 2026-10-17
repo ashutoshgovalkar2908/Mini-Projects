@@ -6,7 +6,7 @@ const btn = document.getElementById('changeColorBtn');
 btn.addEventListener('click', () => {
     const color = input.value;
     if(input.value == ''){
-        alert("enter color");
+        alert("Please enter color");
     }
     document.body.style.backgroundColor = `${color}`
 })
