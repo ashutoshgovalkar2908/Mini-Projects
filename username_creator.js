@@ -1,14 +1,20 @@
 
     // EvenListener for creat username
-    document.querySelector('#btn').addEventListener('click', function () {
-
+    document.querySelector('#btn').addEventListener('click', function (event) {
+    event.preventDefault();
     // accessing inputs field
     let firstName = document.querySelector("#firstname");
     let lastName = document.querySelector("#lastname");
+    let backButton = document.querySelector(".back-button");
 
     firstName = firstName.value;
     lastName = lastName.value;
-    console.log(firstName, lastName);
+
+    if(firstName === "" ||  lastName === ""){
+        alert("Required Inputs");
+        return;
+    }else{
+
     // loops for checking space between characters
     for (let i = 0; i < firstName.length; i++) {
         if (firstName[i] === " ") {
@@ -24,6 +30,7 @@
             i = -1;
         }
     }
+  }
 
     firstName = firstName.toLowerCase();
     lastName = lastName.toLowerCase();
@@ -58,11 +65,17 @@
 
     creatorbox.style.display = "none";
     outputbox.style.display = "block";
+    backButton.style.display = "block";
+
 })
 
     // EventListener on output box to close.
-    document.querySelector('.close').addEventListener('click', function () {
+    document.querySelector('.back-button').addEventListener('click', function () {
 
-    document.querySelector('.output-box').style.display = 'none';
-    document.querySelector('.creator-box').style.display = 'block';
+    let out = document.querySelector('.output-box');
+    let creator = document.querySelector('.creator-box');
+    let backButton = document.querySelector('.back-button');
+    out.style.display = "none";
+    creator.style.display= "block";
+    backButton.style.display = "none";
 });

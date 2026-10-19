@@ -90,7 +90,7 @@ label {
     margin-top: 50px;
 }
 
-.btn button {
+.btn input {
     padding: 18px;
     width: 100%;
     border-radius: 20px;
@@ -137,16 +137,17 @@ button:hover {
     padding: 10px;
     margin-bottom: 10px;
 }
-
-.close {
+.back-button{
+    display: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 70px;
+   
 }
-
-.close img {
-    width: 25px;
-    cursor: pointer;
+.back-button button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
 }
 
 @keyframes btn {
